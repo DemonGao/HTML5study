@@ -1,0 +1,263 @@
+@charset "utf-8";
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.content{
+	position: absolute;
+	
+}
+.page1{
+	position: relative;
+	background: #0cf;
+}
+.page2{
+	position: relative;
+	background: #000;
+}
+.page3{
+	position: relative;
+}
+.page4{
+	position: relative;
+	background-color: #00CCFF;
+}
+/*第一个页面的css*/
+.page1-title{
+	width: 60%;
+	position: absolute;
+	left: 20%;
+	top: 10%;
+}
+.page1-flower1,.page1-flower2{
+	position: absolute;
+	height: 15%;
+	animation:flower 3s infinite
+}
+.page1-flower1{
+	top: 10%;
+	left: 10%;
+}
+.page1-flower2{
+	top: 22%;
+	right: 18%;
+}
+@keyframes flower{
+	0%{}
+	25%{transform: rotate(30deg);}
+	50%{transform: rotate(0deg);}
+	75%{transform: rotate(-30deg);}
+	100%{transform: rotate(0deg);}
+	
+}
+.page1-cloud{
+	position: absolute;
+	width: 90%;
+	height: 90%;
+	top: 5%;
+	left: 5%;
+	animation: zooming 3s infinite;
+}
+.page1-elements{
+	position: absolute;
+	width: 100%;
+	height:100%;
+	top: 0%;
+	left: 0%;
+	animation: zooming 3s infinite;
+}
+@keyframes zooming{
+	0%{}
+	50%{transform: scale(0.9);}
+	100%{transform: scale(1);}
+}
+.page1-building{
+	position: absolute;
+	width: 100%;
+	height: 30%;
+	bottom: 0%;
+	left: 0%;
+	/*开始隐藏*/
+	display: none;
+}
+.page1-person{
+	position: absolute;
+	width: 0px;
+	bottom: 30%;
+	left: 15%;
+	animation: per 3s infinite;
+}
+@keyframes per{
+	0%{}
+	50%{transform: scale(1.4);}
+	100%{transform: scale(1);}
+}
+
+
+/*页面二的css设置*/
+.page2-bg{
+	position: absolute;
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+.page2-text1,.page2-text2{
+	position: absolute;
+	right: 0%;
+	width: 70%;
+	display: none;
+}
+.page2-text1{
+	top: 30%;
+}
+.page2-text2{
+	top: 60%;
+}
+.page2-star{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+/*页面三的css设置*/
+.page3-bg{
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+}
+.page3-station{
+	position: absolute;
+	bottom:0px;
+	width: 100%;
+	
+}
+.page3-bus{
+	position: absolute;
+	width: 65%;
+	bottom: 10%;
+	left: 0px;
+}
+.page3-me{
+	position: absolute;
+	height: 15%;
+	right: 0px;
+	bottom: 13%;
+}
+.page3-early{
+	position: absolute;
+	top: 10%;
+	height: 5%;
+	display: none;
+}
+.page3-last{
+	position: absolute;
+	top: 18%;
+	height: 5%;
+	display: none;
+}
+/*第二画面*/
+.page3-wall{
+	position: absolute;
+	width: 30%;
+	height: 70%;
+	bottom: 0px;
+	right: 0px;
+	display: none;
+}
+.page3-cry{
+	position: absolute;
+	width: 20%;
+	top: 21%;
+	right: 15%;
+	display: none;
+}
+.page3-space{
+	position: absolute;
+	width: 35%;
+	left: 5%;
+	top: 20%;
+	width: 0%;
+}
+.page3-where{
+	position: absolute;
+	width: 50%;
+	left: 10%;
+	bottom: 10%;
+	width: 0%;
+}
+/*页面4的css*/
+.page4-lobg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	/*display: none;*/
+}
+.page4-lo{
+	position: absolute;
+	left: 5%;
+	height: 70%;
+	bottom: 0%;
+	
+}
+.page4-ct{
+	position: absolute;
+	right: 0%;
+	width: 40%;
+	top: 15%;
+}
+.page4-click{
+	position: absolute;
+	top: 40%;
+	left: 28%;
+	width: 50%;
+	animation: click 2s infinite;
+	z-index: 3;
+}
+@keyframes click{
+	0%{}
+	50%{transform: scale(1.3);}
+	100%{transform: scale(1);}
+}
+/*第二场景图*/
+.page4-lobg2{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.page4-wky{
+	position: absolute;
+	top: 10%;
+	width: 50%;
+	left: 25%;
+	display: none;
+}
+/*箭头*/
+.up{
+	position: fixed;
+	bottom: 3%;
+	width: 20%;
+	left: 40%;
+	opacity: 0.5;
+	animation: updown 2s infinite;
+}
+@keyframes updown{
+	0%{}
+	50%{bottom: 5%;}
+	100%{bottom: 3%;}
+}
+/*音乐logo*/
+.musicbtn{
+	position: fixed;
+	top: 5px;
+	right: 5px;
+	width: 15%;
+	
+	animation: music 2s infinite;
+}
+@keyframes music{
+	0%{}
+	100%{transform: rotate(360deg)}
+}

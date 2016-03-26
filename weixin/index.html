@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>微信场景页面</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js" ></script>
+		<script type="text/javascript" src="js/jquery.touchSwipe.min.js" ></script>
+		<script type="text/javascript" src="js/main.js" ></script>
+	<body>
+		<div class="content">
+			<!--页面1-->
+			<div class="page page1">
+				<img src="img/indexTxt.png" class="page1-title"/>
+				<img src="img/indexFlowers01.png" class="page1-flower1" />
+				<img src="img/indexFlowers02.png" class="page1-flower2" />
+				<img src="img/endCloudys.png" class="page1-cloud" />
+				<img src="img/indexElements.png" class="page1-elements" />
+				<img src="img/indexBuilding.png" class="page1-building" />
+				<img src="img/indexFlight.png" class="page1-person" />
+			</div>
+			
+			<!--页面2-->
+			<div class="page page2">
+				<img src="img/wasBg.jpg" class="page2-bg"/>
+				<img src="img/wasFarm.png" class="page2-text1" />
+				<img src="img/wasIT.png" class="page2-text2" />
+				<img src="img/wasStar.png" class="page2-star" />
+			</div>
+			
+			<!--页面3-->
+			<div class="page page3">\
+				<!--场景一-->
+				<img src="img/earlyBg.jpg" class="page3-bg" />
+				<img src="img/lastBusStation.png" class="page3-station" />
+				<img src="img/bus.png" class="page3-bus" />
+				<img src="img/lastBusAvatar.png" class="page3-me" />
+				<img src="img/earlyTitle.png" class="page3-early" />
+				<img src="img/lastBusTitle.png" class="page3-last" />
+				<!--场景二-->
+				<img src="img/myTeamWall.png"  class="page3-wall"/>
+				<img src="img/myTeamAvatar.png" class="page3-cry"/>
+				<img src="img/myTeamSpace.png" class="page3-space"/>
+				<img src="img/myteamWhereTxt.png" class="page3-where" />
+			</div>
+			
+			<!--页面4-->
+			<div class="page page4">
+				<img src="img/lightOffBg.jpg" class="page4-lobg" />
+				<img src="img/cornerTitle.png" class="page4-ct" />
+				<img src="img/clickGuide.png" class="page4-click" />
+				<!--第二场景图-->
+				<img src="img/lightOnBg.jpg" class="page4-lobg2" />
+				<img src="img/weKnowYou.png" class="page4-wky" />
+				<!--灯-->
+				<img src="img/lightOff.png"  class="page4-lo" onclick="start(this)"/>
+				
+				<!--灯end-->
+				
+				
+			</div>
+			<!--添加音乐图标-->
+			<img src="img/musicBtn.png" class="musicbtn" onclick="playPause(this)" />
+			<!--autoplay初始页面播放音乐-->
+			<audio src="mp3/music.mp3" autoplay="autoplay" id="musicPlayer"></audio>
+		</div>
+		<img src="img/arrow-up.png" class="up" onclick="clickup()"/>
+	</body>
+</html>
